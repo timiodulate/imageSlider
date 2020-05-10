@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button class="btn right">next</button>
+        <button class="btn left">prev</button>
+        <img src="./images/1.jpg" alt="">
+    </div>
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: burlywood;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 500px;
+        height: 100vh;
+    }
+
+    .container {
+        border: solid 2px;
+        height: 60%;
+        /* width:; */
+        display: relative;
+    }
+
+    img {
+        width: 300px;
+        height: 100%;
+    }
+
+    .btn {
+        position: absolute;
+        top: 50%;
+        /* z-index: 233; */
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+        border: solid 1px black;
+        background-color: burlywood;
+        font-size: 16px;
+        color: black;
+    }
+    .btn:hover{
+        color: white;
+        /* background-color: white; */
+    }
+    .right {
+        right: 37.5%;
+    }
+    .left {
+        left: 37.5%;
+    }
+
+
+</style>
+<script src="./app.js"></script>
+</html>
